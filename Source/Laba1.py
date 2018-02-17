@@ -9,7 +9,7 @@ def alpha_search_lab1(tf, arg, h, alpha, beta):
     return i
 
 
-def alpha_quick_lab1(tf, arg, h, alpha=0, beta=0):
+def alpha_quick_lab1(tf, arg, h):
     fun = Tf.TargetFunction(tf.f_alpha_k(x=arg, h=h))
     return descent_method((h_1, fun, alpha_search_lab1))
 

@@ -39,4 +39,4 @@ def show_graphic(df, number):
     trace3 = go.Scatter(x=df.index, y=df['alpha'], name='a_k')
     layout = {'title': 'Residuals and function'}
     fig = go.Figure(data=[trace0, trace1, trace2, trace3], layout=layout)
-    plotly.offline.plot(fig, filename='laba' + number + '.html', show_link=False)
+    plotly.offline.plot(fig, filename='../Result/Laba ' + number + '.html', show_link=False)

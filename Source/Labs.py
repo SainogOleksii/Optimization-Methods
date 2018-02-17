@@ -7,10 +7,10 @@ def target_function(x):
     return 16 * x[0] ** 2 + 0.018 * x[0] * x[1] + 15 * x[1] ** 2 + 2 * x[2] ** 2 + x[0] - x[2]
 
 # Writer to Excel format
-writer = pd.ExcelWriter('MethOpt.xlsx', engine='xlsxwriter')
+writer = pd.ExcelWriter('../Result/MethOpt.xlsx', engine='xlsxwriter')
 
 # List of labs
-laba1 = (h_1, target_function, alpha_quick_lab1)
+laba1 = (h_1, target_function, alpha_search_lab1)
 laba2 = (h_2, target_function, alpha_search_lab2)
 
 # Launch
